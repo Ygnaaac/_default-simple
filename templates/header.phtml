@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="<?php echo META_DESCRIPTION; ?>" />
+    <meta name="author" content="(c)2014 RIESENIA.com - Internet Systems"/>
+    <meta name="copyright" content="<?php echo META_COPYRIGHT; ?>" />
+    <meta name="generator" content="" />
+    <meta http-equiv="content-language" content="sk" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"  />
+
+    <title>Srdcom východniar - šariš</title>
+
+    <link type="text/css" href="<?php echo ROOT_PATH; ?>css/reset.css" rel="stylesheet" />
+    <link type="text/css" href="<?php echo ROOT_PATH; ?>css/default.css" rel="stylesheet" />
+
+    <script type="text/javascript">var ROOT_PATH = "<?php echo ROOT_PATH; ?>";</script>
+    <script src="<?php echo ROOT_PATH; ?>js/jquery/jquery.js"></script>
+    <script src="<?php echo ROOT_PATH; ?>js/jquery/jquery.ui.js"></script>
+    <script src="<?php echo ROOT_PATH; ?>js/default.js"></script>
+
+    <?php if (GAQ_CODE): ?>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '<?php echo GAQ_CODE;?>']);
+      _gaq.push(['_setDomainName', '<?php echo GAQ_DOMAIN;?>']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <?php endif; ?>
+
+    <!--[if IE]>
+    <script type="text/javascript">
+        document.createElement("article");
+        document.createElement("section");
+        document.createElement("nav");
+        document.createElement("header");
+        document.createElement("footer");
+    </script>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <link type="text/css" href="<?php echo ROOT_PATH; ?>css/ie.css" rel="stylesheet" />
+    <![endif]-->
+</head>
+
+<body>
+<?php if ($this->checker == 0) { ?>
+    <div id="header_wrapper">
+        <div class="container">
+            <header>
+                <a href="<?php echo ROOT_PATH; ?>" title="www.saris.sk"></a>
+            </header>
+        </div>
+    </div>
+
+    <div id="content_wrapper">
+        <img src="<?php echo ROOT_PATH; ?>pictures/bg/bg_body.png" alt="background" class="fake_bg" />
+        <div id="content" class="container">
+
+<?php } else { ?>
+
+    <div id="age_wrapper">
+        <!-- <img src="<?php echo ROOT_PATH; ?>pictures/bg/bg_body.png" alt="background" class="fake_bg" /> -->
+        <div id="age_content" class="container">
+<?php } ?>

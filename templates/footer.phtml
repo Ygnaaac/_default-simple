@@ -1,0 +1,84 @@
+
+        </div> <!-- END CONTAINER -->
+    </div> <!-- END CONTENT -->
+<?php if ($this->checker == 0) { ?>
+    <div id="footer_wrapper">
+        <div class="container">
+            <footer>
+            	<div class="foot_logo"></div>
+            	<div class="foot_linky">
+            		<ul>
+            			<li><a href="http://www.pivovarytopvar.sk/" target="_blank" title="Pivovary Topvar">pivovary topvar</a></li>
+            			<li><a href="http://www.sabmiller.com/" target="_blank" title="Sab Miller">sab miller</a></li>
+            			<li><a href="http://www.srdcomvychodniar.sk/legal/zodpovedne-publikovanie-obsahu.html" target="_blank" title="Zodpovedné publikovanie obsahu">zodpovedné publikovanie obsahu</a></li>
+            			<li><a href="http://www.promileinfo.sk/" target="_blank" title="promileinfo.sk">promileinfo.sk</a></li>
+            		</ul>
+            		<div class="copyright">
+            			Copyright 2014 Pivovary Topvar, a. s.<br />
+						technická podpora: <a href="mailto:info@srdcomvychodniar.sk" target="_blank" title="info@srdcomvychodniar.sk">info@srdcomvychodniar.sk</a>
+            		</div>
+            		<div class="promile">
+            			len pre osoby staršie ako 18 rokov<br />
+            			<a href="http://www.promileinfo.sk" target="_blank" title="www.promileinfo.sk">www.promileinfo.sk</a>
+            		</div>
+            	</div>
+            	<div class="foot_newsletter">
+            		<div id="newsletter_singup" class="newsletter">
+	            		<div class="title">Zostaň s nami v kontakte</div>
+						<div>
+							<div class="newsletter_error nodisplay">&nbsp;</div>
+							<p>Nechaj nám svoj e-mail a my ťa budeme informovať o najnovších akciách, novinkách a eventov:</p>
+							<form id="newsletter-form" name="newsletter-form" method="post" action="newsletter">
+								<input type="text"  class="email" value="tvoj@email" name="email" id="newsletter-email" onfocus="if(this.value == 'tvoj@email') this.value = ''" onblur="if(this.value == '') this.value = 'tvoj@email'"  />
+								<input name="mail_write" type="hidden" value="1" />
+	                            <button type="submit" class="newsletter_submit"><span>Odoslať</span></button>
+							</form>
+	                        <a href="JavaScript:void(0)" id="newsletter_singup_link" title="Odhlásiť sa z odberu noviniek" style="">Odhlásenie z newslettru</a>
+						</div>
+					</div>
+
+					<div id="newsletter_singout" class="newsletter nodisplay">
+						<div class="title" >Odhláste sa z odberu noviniek</div>
+						<div>
+							<div class="newsletter_error nodisplay">&nbsp;</div>
+							<p>Zadaj svoj e-mail a my ťa odhlásime z odberu noviniek:</p>
+							<form id="newsletter-form" name="newsletter-form" method="post" action="newsletter">
+								<input type="text"  class="email" value="tvoj@email" name="email" id="newsletter-email" onfocus="if(this.value == 'tvoj@email') this.value = ''" onblur="if(this.value == '') this.value = 'tvoj@email'"  />
+								<input name="mail_unsubscribe_form_sent" type="hidden" value="1" />
+								<button type="submit" class="newsletter_submit"><span>Odoslať</span></button>
+							</form>
+							<a href="JavaScript:void(0)" id="newsletter_singout_link" title="Prihlásenie odberu noviniek na email" style="">
+								Prihlásenie do newslettru
+							</a>
+						</div>
+					</div>
+
+					<div class="riesenia">riešenie od <a href="http://www.riesenia.com" target="_blank" title="riesenia.com">RIESENIA.com</a></div>
+            		<div class="breaker"></div>
+            	</div>
+            	<div class="breaker"></div>
+            </footer>
+        </div>
+    </div>
+<?php } else { ?>
+	<div class="age_footer_wrapper">
+		<div class="container">
+			<div class="age_left">
+				LEN PRE OSOBY STARŠIE AKO 18 ROKOV<br />
+				<a href="http://www.promileinfo.sk" title="www.promileinfo.sk">www.promileinfo.sk</a>
+			</div>
+			<div class="age_right">
+				<a href="http://eshop.srdcomvychodniar.sk/ochrana-sukromia" target="_blank" title="Ochrana súkromia">Ochrana súkromia</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+				<a href="http://eshop.srdcomvychodniar.sk/subory-cookie" target="_blank" title="Súbory cookie">Súbory cookie</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+				<a href="http://promileinfo.sk/content/rady-ako-pit-s-rozumom" target="_blank" title="Zodpovedná konzumácia alkoholu">Zodpovedná konzumácia alkoholu</a>
+				<br />
+				Copyright &copy; 2014 Pivovary Topvar, a.s.
+			</div>
+			<div class="breaker"></div>
+			<div class="age_riesenia">riešenie od <a href="http://www.riesenia.com" target="_blank" title="RIESENIA.com">RIESENIA.com</a></div>
+		</div>
+	</div>
+<?php } ?>
+
+</body>
+</html>
